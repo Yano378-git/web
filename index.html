@@ -1,97 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV. Hand Jaya - Supplier Material Konstruksi</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV. HandJaya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+        }
+        header {
+            background: linear-gradient(90deg, #3949ab, #1e88e5);
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+            letter-spacing: 1px;
+        }
+        nav a {
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #ffeb3b;
+        }
+        .hero {
+            height: 70vh;
+            background: url('https://images.unsplash.com/photo-1581091870627-3a7c61f6d0c2?auto=format&fit=crop&w=1200&q=60') center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+        .hero h2 {
+            font-size: 48px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        .section {
+            padding: 60px 40px;
+            text-align: center;
+        }
+        .section h3 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .card i {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #1e88e5;
+        }
+        footer {
+            background: #1e1e1e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <!-- Navbar -->
-  <nav class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-blue-700">CV. Hand Jaya</h1>
-      <div class="space-x-6 font-semibold">
-        <a href="#home" class="hover:text-blue-600">Home</a>
-        <a href="#produk" class="hover:text-blue-600">Produk</a>
-        <a href="#tentang" class="hover:text-blue-600">Tentang Kami</a>
-        <a href="#kontak" class="hover:text-blue-600">Kontak</a>
-      </div>
+<body>
+
+<header>
+    <h1>CV. HandJaya</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#services">Layanan</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h2>Solusi Profesional Untuk Project Anda</h2>
+</section>
+
+<section class="section" id="about">
+    <h3>Tentang Kami</h3>
+    <p>CV. HandJaya adalah perusahaan jasa yang menyediakan layanan terbaik dan terpercaya untuk kebutuhan industri dan project Anda.</p>
+</section>
+
+<section class="section" id="services">
+    <h3>Layanan Kami</h3>
+    <div class="services">
+        <div class="card">
+            <i class="fas fa-truck"></i>
+            <h4>Pengadaan Barang</h4>
+            <p>Menyediakan barang kebutuhan industri berkualitas tinggi.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-tools"></i>
+            <h4>Maintenance</h4>
+            <p>Layanan perbaikan dan perawatan alat kerja profesional.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-warehouse"></i>
+            <h4>Logistik</h4>
+            <p>Distribusi dan pengiriman barang secara aman dan cepat.</p>
+        </div>
     </div>
-  </nav>
+</section>
 
-  <!-- Hero Section -->
-  <section id="home" class="bg-cover bg-center h-96 flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1581091215367-59ab6b32e1d0');">
-    <div class="bg-black bg-opacity-50 p-6 rounded-xl text-center">
-      <h2 class="text-4xl text-white font-bold mb-4">Supplier Material Konstruksi Terpercaya</h2>
-      <p class="text-gray-200 text-lg">Kami menyediakan bahan bangunan berkualitas untuk proyek Anda.</p>
-    </div>
-  </section>
+<section class="section" id="contact">
+    <h3>Kontak Kami</h3>
+    <p>Hubungi kami untuk informasi lebih lanjut atau permintaan penawaran.</p>
+    <p><i class="fas fa-phone"></i> 0812-3456-7890</p>
+    <p><i class="fas fa-envelope"></i> cv.handjaya@gmail.com</p>
+</section>
 
-  <!-- Produk Section -->
-  <section id="produk" class="max-w-7xl mx-auto py-16 px-6">
-    <h2 class="text-3xl font-bold text-center mb-10 text-blue-700">Produk Kami</h2>
+<footer>
+    © 2025 CV. HandJaya — All Rights Reserved
+</footer>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="bg-white shadow-md rounded-xl p-6">
-        <h3 class="text-xl font-bold mb-2">Bata Ringan / Hebel</h3>
-        <p>Bata ringan berbagai ukuran untuk keperluan dinding bangunan.</p>
-      </div>
-
-      <div class="bg-white shadow-md rounded-xl p-6">
-        <h3 class="text-xl font-bold mb-2">Pasir dan Urugan</h3>
-        <p>Pasir urug, tanah merah, sirtu, limestone dan material tanah lainnya.</p>
-      </div>
-
-      <div class="bg-white shadow-md rounded-xl p-6">
-        <h3 class="text-xl font-bold mb-2">Batu Split & Makadam</h3>
-        <p>Batu split berbagai ukuran untuk pondasi dan kebutuhan proyek.</p>
-      </div>
-
-      <div class="bg-white shadow-md rounded-xl p-6">
-        <h3 class="text-xl font-bold mb-2">Semen</h3>
-        <p>Aneka merek semen berkualitas seperti Tiga Roda, Gresik, Padang.</p>
-      </div>
-
-      <div class="bg-white shadow-md rounded-xl p-6">
-        <h3 class="text-xl font-bold mb-2">Mortar</h3>
-        <p>Mortar berbagai jenis seperti MU 200, MU 301, dan lainnya.</p>
-      </div>
-
-      <div class="bg-white shadow-md rounded-xl p-6">
-        <h3 class="text-xl font-bold mb-2">Material Kimia</h3>
-        <p>Produk Sika: SikaGrout, waterproofing, dan material kimia bangunan.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tentang Kami -->
-  <section id="tentang" class="bg-white py-16 px-6">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-10 text-blue-700">Tentang Kami</h2>
-      <p class="text-lg leading-relaxed text-center">
-        CV. Hand Jaya adalah supplier material konstruksi yang menyediakan berbagai material bangunan seperti bata ringan, pasir, batu split, semen, mortar, dan material proyek lainnya. Kami berkomitmen memberikan layanan terbaik dengan harga kompetitif dan kualitas terjamin.
-      </p>
-    </div>
-  </section>
-
-  <!-- Kontak -->
-  <section id="kontak" class="py-16 bg-gray-100 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-blue-700 mb-6">Kontak Kami</h2>
-      <p class="mb-4 text-lg">Hubungi kami untuk pemesanan material atau informasi lebih lanjut.</p>
-
-      <div class="bg-white shadow-md p-6 rounded-xl inline-block text-left">
-        <p><strong>Telepon:</strong> 0812‑3456‑7890</p>
-        <p><strong>Email:</strong> cvhandjaya@mail.com</p>
-        <p><strong>Alamat:</strong> Jakarta, Indonesia</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-blue-700 text-white py-4 text-center">
-    <p>© 2025 CV. Hand Jaya — All Rights Reserved</p>
-  </footer>
 </body>
 </html>
