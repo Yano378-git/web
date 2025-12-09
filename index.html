@@ -92,15 +92,9 @@
 </head>
 <body>
 
-<header style="
-    background-image: url('https://images.unsplash.com/photo-1581092162384-8987c1d53c61?auto=format&fit=crop&w=1600&q=60');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 120px 20px;
-    text-align: center;
-    color: white;
-">
+<header><div class="mt-6 flex gap-4">
+    <a href="https://wa.me/6280000000000" class="inline-block bg-green-500 text-white px-5 py-3 rounded-lg shadow-lg hover:bg-green-600 transition">Hubungi via WhatsApp</a>
+  </div>
     <h1 style="font-size:48px;font-weight:800;text-shadow:0 2px 10px rgba(0,0,0,0.6);">Supplier Material Konstruksi Terpercaya</h1>
     <p style="font-size:20px;margin-top:10px;text-shadow:0 2px 10px rgba(0,0,0,0.6);">Kami menyediakan bahan bangunan berkualitas untuk proyek Anda.</p>
 </header>
@@ -156,6 +150,15 @@
     </div>
 </section>
 
+<script>
+// Simple fade-in animation
+const imgs = document.querySelectorAll('img');
+imgs.forEach((img, i) => {
+  img.style.opacity = 0;
+  img.style.transition = '1.5s';
+  setTimeout(()=> img.style.opacity = 1, 300*i);
+});
+</script>
 </body>
 </html>
 
