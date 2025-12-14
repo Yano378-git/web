@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV. Hand Jaya | Supplier Pasir Bangunan</title>
+    <title>CV. Hand Jaya | Supplier Pasir Halus</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -12,13 +12,13 @@
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            background: #f4f6f8;
+            background: #f5f6f8;
             color: #333;
         }
 
         /* NAVBAR */
         nav {
-            background: white;
+            background: #ffffff;
             padding: 16px 30px;
             display: flex;
             justify-content: space-between;
@@ -30,7 +30,7 @@
         }
         nav strong {
             font-size: 22px;
-            color: #cc7a00;
+            color: #c97a00;
         }
         nav a {
             margin-left: 18px;
@@ -39,16 +39,16 @@
             color: #444;
         }
         nav a:hover {
-            color: #cc7a00;
+            color: #c97a00;
         }
 
         /* HERO */
         .hero {
-            background: linear-gradient(to right, #b36b00, #ffb347);
+            background: linear-gradient(to right, #c97a00, #ffb347);
             color: white;
             padding: 140px 20px;
             text-align: center;
-            animation: fadeIn 1.4s ease;
+            animation: fadeIn 1.3s ease;
         }
         .hero h1 {
             font-size: 48px;
@@ -66,114 +66,116 @@
             display: inline-block;
             margin-top: 30px;
             background: #25D366;
-            padding: 14px 32px;
+            padding: 15px 34px;
             color: white;
             border-radius: 10px;
             font-size: 18px;
             font-weight: 600;
             text-decoration: none;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            box-shadow: 0 5px 14px rgba(0,0,0,0.3);
             transition: 0.3s;
         }
         .wa-btn:hover {
-            transform: scale(1.07);
+            transform: scale(1.08);
             opacity: 0.9;
         }
 
-        /* PASIR SECTION */
-        .pasir {
+        /* PRODUK */
+        .produk {
             padding: 70px 20px;
             text-align: center;
         }
-        .pasir h2 {
+        .produk h2 {
             font-size: 34px;
             font-weight: 700;
-            color: #b36b00;
+            color: #c97a00;
         }
-        .pasir-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 25px;
-            margin-top: 40px;
-            padding: 0 40px;
-        }
-        .pasir-card {
+
+        .produk-card {
             background: white;
-            padding: 22px;
-            border-radius: 14px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-            transition: 0.3s;
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+            animation: fadeIn 1.4s ease;
         }
-        .pasir-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+
+        .produk-card h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .produk-card ul {
+            list-style: none;
+            padding: 0;
+            font-size: 17px;
+        }
+        .produk-card ul li {
+            margin: 10px 0;
         }
 
         /* FOOTER */
         footer {
             background: #333;
             color: white;
-            padding: 30px 20px;
+            padding: 35px 20px;
             text-align: center;
             margin-top: 50px;
         }
 
         @keyframes fadeIn {
-            from {opacity: 0; transform: translateY(20px);}
-            to {opacity: 1; transform: translateY(0);}
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <nav>
     <strong>CV. Hand Jaya</strong>
     <div>
         <a href="#home">Home</a>
-        <a href="#pasir">Produk</a>
+        <a href="#produk">Produk</a>
         <a href="#kontak">Kontak</a>
     </div>
 </nav>
 
+<!-- HERO -->
 <section id="home" class="hero">
-    <h1>Supplier Pasir Bangunan Berkualitas</h1>
+    <h1>Supplier Pasir Halus Berkualitas</h1>
     <p>
-        Menyediakan pasir pasang, pasir cor, dan pasir urug 
-        dengan kualitas terjamin dan pengiriman tepat waktu.
+        Menyediakan pasir halus bersih dan berkualitas tinggi  
+        untuk plester, pasangan bata, dan finishing bangunan.
     </p>
 
     <a href="https://wa.me/6281234567890" target="_blank" class="wa-btn">
-        💬 Pesan Pasir via WhatsApp
+        💬 Pesan Pasir Halus via WhatsApp
     </a>
 </section>
 
-<section id="pasir" class="pasir">
-    <h2>Jenis Pasir yang Kami Sediakan</h2>
+<!-- PRODUK -->
+<section id="produk" class="produk">
+    <h2>Produk Unggulan Kami</h2>
 
-    <div class="pasir-grid">
-
-        <div class="pasir-card">
-            <h3>Pasir Pasang</h3>
-            <p>Halus dan bersih, cocok untuk pasangan bata dan plesteran.</p>
-        </div>
-
-        <div class="pasir-card">
-            <h3>Pasir Cor</h3>
-            <p>Butiran tajam dan kuat untuk pengecoran beton.</p>
-        </div>
-
-        <div class="pasir-card">
-            <h3>Pasir Urug</h3>
-            <p>Cocok untuk pengurugan dan perataan lahan.</p>
-        </div>
-
+    <div class="produk-card">
+        <h3>Pasir Halus Bangunan</h3>
+        <ul>
+            <li>✔ Tekstur halus & bersih</li>
+            <li>✔ Cocok untuk plester & acian</li>
+            <li>✔ Tidak bercampur tanah</li>
+            <li>✔ Siap kirim ke lokasi proyek</li>
+            <li>✔ Harga bersaing</li>
+        </ul>
     </div>
 </section>
 
+<!-- FOOTER -->
 <footer id="kontak">
     <p><strong>CV. Hand Jaya</strong></p>
-    <p>Supplier Pasir Bangunan</p>
+    <p>Supplier Pasir Halus Bangunan</p>
     <p>📞 WhatsApp: 0812-3456-7890</p>
 </footer>
 
