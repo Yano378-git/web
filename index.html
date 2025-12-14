@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV. Hand Jaya | Supplier Pasir Halus</title>
 
-    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
@@ -13,12 +12,11 @@
             margin: 0;
             font-family: 'Poppins', sans-serif;
             background: #f5f6f8;
-            color: #333;
         }
 
         /* NAVBAR */
         nav {
-            background: #ffffff;
+            background: rgba(255,255,255,0.95);
             padding: 16px 30px;
             display: flex;
             justify-content: space-between;
@@ -42,22 +40,40 @@
             color: #c97a00;
         }
 
-        /* HERO */
+        /* HERO DENGAN FOTO */
         .hero {
-            background: linear-gradient(to right, #c97a00, #ffb347);
+            position: relative;
+            background: url('pasir.jpg') center/cover no-repeat;
+            padding: 160px 20px;
             color: white;
-            padding: 140px 20px;
             text-align: center;
+        }
+
+        /* OVERLAY GELAP */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.55);
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
             animation: fadeIn 1.3s ease;
         }
+
         .hero h1 {
             font-size: 48px;
             font-weight: 800;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.35);
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
         }
         .hero p {
             font-size: 20px;
-            max-width: 700px;
+            max-width: 750px;
             margin: 15px auto 0;
         }
 
@@ -66,13 +82,13 @@
             display: inline-block;
             margin-top: 30px;
             background: #25D366;
-            padding: 15px 34px;
+            padding: 16px 36px;
             color: white;
             border-radius: 10px;
             font-size: 18px;
             font-weight: 600;
             text-decoration: none;
-            box-shadow: 0 5px 14px rgba(0,0,0,0.3);
+            box-shadow: 0 5px 14px rgba(0,0,0,0.4);
             transition: 0.3s;
         }
         .wa-btn:hover {
@@ -87,23 +103,16 @@
         }
         .produk h2 {
             font-size: 34px;
-            font-weight: 700;
             color: #c97a00;
         }
 
         .produk-card {
             background: white;
-            max-width: 700px;
+            max-width: 720px;
             margin: 40px auto;
             padding: 35px;
             border-radius: 16px;
             box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-            animation: fadeIn 1.4s ease;
-        }
-
-        .produk-card h3 {
-            font-size: 28px;
-            margin-bottom: 15px;
         }
 
         .produk-card ul {
@@ -115,17 +124,15 @@
             margin: 10px 0;
         }
 
-        /* FOOTER */
         footer {
             background: #333;
             color: white;
             padding: 35px 20px;
             text-align: center;
-            margin-top: 50px;
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
+            from { opacity: 0; transform: translateY(25px); }
             to { opacity: 1; transform: translateY(0); }
         }
     </style>
@@ -133,7 +140,6 @@
 
 <body>
 
-<!-- NAVBAR -->
 <nav>
     <strong>CV. Hand Jaya</strong>
     <div>
@@ -143,40 +149,39 @@
     </div>
 </nav>
 
-<!-- HERO -->
 <section id="home" class="hero">
-    <h1>Supplier Pasir Halus Berkualitas</h1>
-    <p>
-        Menyediakan pasir halus bersih dan berkualitas tinggi  
-        untuk plester, pasangan bata, dan finishing bangunan.
-    </p>
+    <div class="hero-content">
+        <h1>Supplier Pasir Halus Berkualitas</h1>
+        <p>
+            Pasir halus bersih langsung dari lokasi tambang,  
+            cocok untuk plester, pasangan bata, dan finishing bangunan.
+        </p>
 
-    <a href="https://wa.me/6281234567890" target="_blank" class="wa-btn">
-        💬 Pesan Pasir Halus via WhatsApp
-    </a>
+        <a href="https://wa.me/6281240748463" target="_blank" class="wa-btn">
+            💬 Hubungi WhatsApp Sekarang
+        </a>
+    </div>
 </section>
 
-<!-- PRODUK -->
 <section id="produk" class="produk">
-    <h2>Produk Unggulan Kami</h2>
+    <h2>Produk Unggulan</h2>
 
     <div class="produk-card">
         <h3>Pasir Halus Bangunan</h3>
         <ul>
-            <li>✔ Tekstur halus & bersih</li>
-            <li>✔ Cocok untuk plester & acian</li>
+            <li>✔ Halus & bersih</li>
             <li>✔ Tidak bercampur tanah</li>
+            <li>✔ Cocok untuk plester & finishing</li>
             <li>✔ Siap kirim ke lokasi proyek</li>
             <li>✔ Harga bersaing</li>
         </ul>
     </div>
 </section>
 
-<!-- FOOTER -->
 <footer id="kontak">
     <p><strong>CV. Hand Jaya</strong></p>
-    <p>Supplier Pasir Halus Bangunan</p>
-    <p>📞 WhatsApp: 0812-3456-7890</p>
+    <p>Supplier Pasir Halus</p>
+    <p>📞 WhatsApp: 0812-4074-8463</p>
 </footer>
 
 </body>
